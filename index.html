@@ -159,18 +159,14 @@
 	<br>
 
 	<table align=center width=850px>
-	  		  <center><h1>Abstract</h1></center>
+	  	<center><h1>Abstract</h1></center>
 			</table>
-					We introduce a self-supervised method for learning visual correspondence from unlabeled video.
-The main idea is to use cycle-consistency in time as free supervisory signal for learning visual representations from scratch.
-At training time, our model optimizes a spatial feature representation to be useful for performing cycle-consistent tracking. At test time, we use the acquired representation to find nearest neighbors across space and time. We demonstrate the generalizability of the representation across a range of visual correspondence tasks, including video object segmentation, keypoint tracking, and optical flow. Our approach outperforms previous self-supervised methods and performs competitively with strongly supervised methods. Overall, we find that the learned representation generalizes surprisingly well, despite being trained only on indoor videos and without fine-tuning.
+			We cast visual imitation as a visual correspondence learning problem. We build upon multi-view self-supervised visual feature learning, synthetic data augmentation, and human finger detectors to learn time-tracked detectors for visual entities of various granularities in the teacher and student environments. We define perceptual similarity to be agreement of the relative spatial arrangements (3D distances) of corresponding visual entities across teacher and learner graphs. We use this perceptual similarity as a re ward function during trajectory optimization. We show the proposed image graph encoding drives successful imitation of a variety of manipulation skills within minutes, using a single demonstration and without any environment instrumentation. It generalizes across background clutter, perturbation of initial conditions, and even across different ob ject instances, and greatly outperforms perceptual similarity functions built over convolutional image embeddings of previous works.
+	  		<br><br>
+			</table>
 
-
-  		  <br><br>
-		  </table>
-
-          <br>
-		  <hr>
+        <br>
+		<hr>
 
 </body>
 </html>
